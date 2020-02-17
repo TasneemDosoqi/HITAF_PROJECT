@@ -74,8 +74,8 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/tavatarArea_linLayout"
-        android:layout_width="404dp"
+        android:id="@+id/avatarArea_linLayout"
+        android:layout_width="430dp"
         android:layout_height="430dp"
         android:layout_below="@+id/linearLayout1"
         android:layout_alignParentEnd="true"
