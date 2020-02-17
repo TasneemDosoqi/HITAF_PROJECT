@@ -6,7 +6,7 @@
         android:allowBackup="true"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".videoPlay">
+        <activity android:name=".Home">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,7 +23,7 @@
         <activity android:name=".Saying">
         </activity>
 
-        <activity android:name=".Home">
+        <activity android:name=".videoPlay">
         </activity>
 
         <activity android:name=".MainActivity">
