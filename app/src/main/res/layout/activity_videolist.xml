@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_blue"
+    tools:context=".type">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="139dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="28dp">
+
+// video
+        <Button
+            android:id="@+id/setting_type"
+            android:layout_width="113.69dp"
+            android:layout_height="113.69dp"
+            android:layout_marginLeft="70dp"
+            android:background="@drawable/green_setting" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="0dp"
+            android:fontFamily="@font/ffhekaya_light"
+            android:text="ماذا تريد ان تشاهد ياصديقي؟"
+            android:textColor="#FFFFFF"
+            android:textSize="100sp" />
+
+        <Button
+            android:id="@+id/back_home"
+            android:layout_width="59.12dp"
+            android:layout_height="103.69dp"
+            android:layout_marginLeft="70dp"
+            android:background="@drawable/back_red" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/textarea_linLayout"
+        android:layout_width="640dp"
+        android:layout_height="446dp"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginRight="59dp"
+        android:background="@drawable/video_list_area"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="8dp" />
+
+    <LinearLayout
+        android:id="@+id/avatarArea_linLayout"
+        android:layout_width="450dp"
+        android:layout_height="459dp"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="773dp"
+        android:layout_marginRight="773dp"
+        android:layout_marginBottom="171dp"
+        android:background="@drawable/avatar_area_blue"
+        android:orientation="vertical"
+        android:padding="8dp" />
+
+</RelativeLayout>
