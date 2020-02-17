@@ -1,5 +1,9 @@
-<resources>
-
-
-
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="MyCustomRadioButton" parent="@android:style/TextAppearance">
+        <item name="android:paddingStart" tools:targetApi="jelly_bean_mr1">6dp</item>
+        <item name="android:paddingEnd" tools:targetApi="jelly_bean_mr1">6dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/hekaya_font</item>
+        <item name="android:textSize">40dp</item>
+    </style>
 </resources>
