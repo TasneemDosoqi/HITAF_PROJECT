@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_green"
+    tools:context=".type">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="139dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="28dp">
+
+
+        <Button
+            android:id="@+id/setting_type"
+            android:layout_width="113.69dp"
+            android:layout_height="113.69dp"
+            android:layout_marginLeft="70dp"
+            android:background="@drawable/green_setting" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_marginLeft="187dp"
+            android:layout_marginTop="0dp"
+            android:fontFamily="@font/ffhekaya_light"
+            android:text="ماذا تكتب يا صديقي؟ "
+            android:textColor="#FFFFFF"
+            android:textSize="100sp" />
+
+        <Button
+            android:id="@+id/back_home"
+            android:layout_width="59.12dp"
+            android:layout_height="103.69dp"
+            android:layout_marginLeft="180dp"
+            android:background="@drawable/back_purple" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/textarea_linLayout"
+        android:layout_width="647dp"
+        android:layout_height="340dp"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="96dp"
+        android:background="@drawable/text_area_green"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="8dp">
+
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="587dp"
+            android:layout_height="275dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/ffhekaya_light"
+            android:inputType="textMultiLine"
+            android:textColor="#FFFFFF"
+            android:textSize="60sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tavatarArea_linLayout"
+        android:layout_width="404dp"
+        android:layout_height="430dp"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="793dp"
+        android:layout_marginRight="793dp"
+        android:layout_marginBottom="175dp"
+        android:background="@drawable/avatar_area_green"
+        android:orientation="vertical"
+        android:padding="8dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="657dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/textarea_linLayout"
+        android:layout_gravity="right"
+        android:layout_marginStart="600dp"
+        android:layout_marginLeft="500dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="12dp"
+        android:gravity="center"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/repeat_sign"
+            android:layout_width="113.69dp"
+            android:layout_height="113.69dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/repeat_yellow" />
+
+        <Button
+            android:id="@+id/empty_textArea"
+            android:layout_width="113.69dp"
+            android:layout_height="113.69dp"
+            android:layout_marginLeft="72dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/stop_red" />
+
+        <Button
+            android:id="@+id/accept_text"
+            android:layout_width="113.69dp"
+            android:layout_height="113.69dp"
+            android:layout_marginLeft="72dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/blue_tick" />
+    </LinearLayout>
+
+</RelativeLayout>
