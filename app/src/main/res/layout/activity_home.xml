@@ -22,7 +22,8 @@
             android:layout_width="113.69dp"
             android:layout_height="113.69dp"
             android:layout_marginLeft="70dp"
-            android:background="@drawable/green_setting" />
+            android:background="@drawable/green_setting"
+            android:onClick="click" />
 
         <TextView
             android:id="@+id/textView1"

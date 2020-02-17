@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp"
+    android:background="@drawable/background_purple">
+
+
+    <LinearLayout
+        android:layout_width="4386dp"
+        android:layout_height="3019dp"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/aboutUsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="970dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="100dp"
+            android:background="@drawable/about_us"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/UserName_signup"
+            android:layout_width="212dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="780dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="19dp"
+            android:layout_marginRight="199dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/hekaya_font"
+            android:inputType="text"
+            android:text="اسم المستخدم :"
+            android:textColor="#FFFFFF"
+            android:textSize="40dp" />
+
+
+
+        <TextView
+            android:id="@+id/email_signup"
+            android:layout_width="217dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/password"
+            android:layout_marginStart="780dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="19dp"
+            android:layout_marginRight="19dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/hekaya_font"
+            android:text="البريد الالكتروني :"
+            android:textColor="#FFFFFF"
+            android:textSize="40dp" />
+
+
+        <TextView
+            android:id="@+id/password_signup"
+            android:layout_width="184dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/password"
+            android:layout_marginStart="820dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="19dp"
+            android:layout_marginRight="199dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/hekaya_font"
+            android:text="كلمة المرور :"
+            android:textColor="#FFFFFF"
+            android:textSize="40dp" />
+
+
+
+        <TextView
+            android:id="@+id/confirm_signup"
+            android:layout_width="217dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/password"
+            android:layout_marginStart="790dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="19dp"
+            android:layout_marginRight="199dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/hekaya_font"
+            android:text="تأكيد كلمة المرور :"
+            android:textColor="#FFFFFF"
+            android:textSize="40dp" />
+
+
+        <TextView
+            android:id="@+id/phone_signup"
+            android:layout_width="208dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/password"
+            android:layout_marginStart="800dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="19dp"
+            android:layout_marginRight="199dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/hekaya_font"
+            android:text="رقم الجوال :"
+            android:textColor="#FFFFFF"
+            android:textSize="40dp" />
+
+
+
+        <TextView
+            android:id="@+id/lock_signup"
+            android:layout_width="208dp"
+            android:layout_height="52dp"
+            android:layout_above="@+id/password"
+            android:layout_marginStart="800dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="19dp"
+            android:layout_marginRight="199dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/hekaya_font"
+            android:text="رمز القفل :"
+            android:textColor="#FFFFFF"
+            android:textSize="40dp" />
+
+
+    </LinearLayout>
+
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edit_Username_signup"
+        android:layout_width="364dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="400dp"
+        android:layout_marginLeft="190dp"
+        android:layout_marginTop="110dp"
+        android:background="@drawable/edit_round"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textColor="#1a0306" />
+
+    <EditText
+        android:id="@+id/edit_email_signup"
+        android:layout_width="364dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="400dp"
+        android:layout_marginLeft="190dp"
+        android:background="@drawable/edit_round"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text=""
+        android:textColor="#1a0306" />
+
+    <EditText
+        android:id="@+id/edit_password_signup"
+        android:layout_width="364dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="400dp"
+        android:layout_marginLeft="190dp"
+        android:background="@drawable/edit_round"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text=""
+        android:textColor="#1a0306" />
+
+    <EditText
+        android:id="@+id/edit_confirm_signup"
+        android:layout_width="364dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="400dp"
+        android:layout_marginLeft="190dp"
+        android:background="@drawable/edit_round"
+        android:ems="10"
+        android:inputType="phone"
+        android:text=""
+        android:textColor="#1a0306" />
+
+    <EditText
+        android:id="@+id/edit_phone_signup"
+        android:layout_width="364dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="400dp"
+        android:layout_marginLeft="190dp"
+        android:background="@drawable/edit_round"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text=""
+        android:textColor="#1a0306" />
+    <EditText
+        android:id="@+id/edit_lock_signup"
+        android:layout_width="364dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="400dp"
+        android:layout_marginLeft="190dp"
+
+        android:background="@drawable/edit_round"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text=""
+        android:textColor="#1a0306" />
+
+    <Button
+        android:id="@+id/signin"
+        android:layout_width="333dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="500dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/signin"
+        android:fontFamily="@font/hekaya_font"
+        android:text="إنشاء حساب"
+        android:textColor="#D16C00"
+        android:textSize="55dp" />
+
+    <TextView
+        android:id="@+id/NewUser"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="480dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/hekaya_font"
+        android:text="لست مستخدم جديد؟  تسجيل دخول"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+
+</LinearLayout>
+
+</RelativeLayout>
