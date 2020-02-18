@@ -15,9 +15,12 @@ public class Home extends AppCompatActivity {
         setContentView(R.layout.activity_home);
         setRequestedOrientation (ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
     }
-// just for trying !
-public void click(View view){
-    Intent i=new Intent(this, SignUp.class);
+
+
+
+
+/*public void click(View view){
+    Intent i=new Intent(this, SignIn.class);
     startActivity(i);
-}
+}*/
 }

@@ -17,7 +17,7 @@
             android:id="@+id/aboutUsButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="970dp"
+            android:layout_marginStart="1100dp"
             android:layout_marginLeft="150dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="15dp"
@@ -100,7 +100,7 @@
             android:layout_width="208dp"
             android:layout_height="wrap_content"
             android:layout_above="@+id/password"
-            android:layout_marginStart="800dp"
+            android:layout_marginStart="797dp"
             android:layout_marginLeft="150dp"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="19dp"
@@ -118,7 +118,7 @@
             android:layout_width="208dp"
             android:layout_height="52dp"
             android:layout_above="@+id/password"
-            android:layout_marginStart="800dp"
+            android:layout_marginStart="797dp"
             android:layout_marginLeft="150dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="19dp"
@@ -230,7 +230,7 @@
         android:textSize="55dp" />
 
     <TextView
-        android:id="@+id/NewUser"
+        android:id="@+id/login_view"
         android:layout_width="347dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="480dp"
@@ -239,7 +239,8 @@
         android:fontFamily="@font/hekaya_font"
         android:text="لست مستخدم جديد؟  تسجيل دخول"
         android:textColor="#FFFFFF"
-        android:textSize="25sp" />
+        android:textSize="25sp"
+        android:onClick="signUp"/>
 
 </LinearLayout>
 
