@@ -62,7 +62,7 @@
 
     </LinearLayout>
 
-    <LinearLayout
+    <FrameLayout
         android:id="@+id/avatarArea_video"
         android:layout_width="450dp"
         android:layout_height="459dp"
@@ -80,9 +80,13 @@
         android:background="@drawable/avatar_area_blue"
         android:orientation="vertical"
         android:padding="8dp" >
+        <VideoView
+            android:id="@+id/video_avatar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center" />
 
-    </LinearLayout>
-//videoplay
+    </FrameLayout>
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="367dp"
