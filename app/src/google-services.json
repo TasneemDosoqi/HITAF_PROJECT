@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "532493124590",
+    "firebase_url": "https://hitafdataset.firebaseio.com",
+    "project_id": "hitafdataset",
+    "storage_bucket": "hitafdataset.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:532493124590:android:3a4dcf63d58f050432c4ff",
+        "android_client_info": {
+          "package_name": "com.example.hitaf_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "532493124590-hsq3937vgvttd7s6435dj5d9neihrb9q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfzfr8SMBJK2VKwoAQ34CcqQO28iJqolk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "532493124590-hsq3937vgvttd7s6435dj5d9neihrb9q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
