@@ -46,7 +46,7 @@
 
     </LinearLayout>
 
-    <LinearLayout
+    <FrameLayout
         android:id="@+id/vedio_linLayout"
         android:layout_width="387dp"
         android:layout_height="387dp"
@@ -56,11 +56,11 @@
         android:padding="8dp">
 
         <VideoView
-            android:id="@+id/your_video_view"
+            android:id="@+id/video_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center" />
-    </LinearLayout>
+    </FrameLayout>
 
 
     <LinearLayout
