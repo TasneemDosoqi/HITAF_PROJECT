@@ -9,6 +9,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
         <activity android:name=".Home">
+
+        </activity>
+        <activity android:name=".type">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
