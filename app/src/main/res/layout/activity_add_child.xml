@@ -47,7 +47,7 @@
                     android:paddingLeft="10dp"
                     android:paddingRight="10dp"
                     android:layout_marginRight="30dp"
-                    app:srcCompat="@drawable/videoFromCompuBtn" />
+                    app:srcCompat="@drawable/videofromcompubtn" />
 
                 <TextView
                     android:id="@+id/textView3"
@@ -220,7 +220,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginLeft="100dp"
                 android:layout_marginRight="5dp"
-                app:srcCompat="@drawable/borderVideo" />
+                app:srcCompat="@drawable/bordervideo" />
         </LinearLayout>
 
     </RelativeLayout>

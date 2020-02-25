@@ -11,7 +11,7 @@
         android:id="@+id/backgroundaddchild_1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:srcCompat="@drawable/areYouSureToDele" />
+        app:srcCompat="@drawable/areyousuretodele" />
 
     <ImageView
         android:id="@+id/cancel"
