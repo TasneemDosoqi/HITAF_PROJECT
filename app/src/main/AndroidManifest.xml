@@ -1,26 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.hitaf_project">
+    package="com.example.hitaf_project" >
 
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-
+    <uses-permission android:name="android.permission.INTERNET" > </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
     <application
         android:allowBackup="true"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".areYouSureToDeleDialog"></activity>
-        <activity android:name=".addChildSuccesDialog" />
-        <activity android:name=".addChild" />
         <activity android:name=".Home">
+
+        </activity>
+        <activity android:name=".type">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".setting" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".setting">
+
+        </activity>
+        <activity android:name=".MainActivity"></activity>
     </application>
+
 
 </manifest>
