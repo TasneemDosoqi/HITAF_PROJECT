@@ -5,6 +5,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.MediaController;
 import android.widget.VideoView;
 
 import androidx.annotation.NonNull;
@@ -22,6 +23,7 @@ public class type extends AppCompatActivity {
     FirebaseAuth auth;
     EditText word;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,34 +33,33 @@ public class type extends AppCompatActivity {
         auth = FirebaseAuth.getInstance();
         word = findViewById(R.id.word);
 
-        FirebaseUser user = auth.getCurrentUser();
 
     }
 
+
     public void translate_word(View view) {
-        //StorageReference gsReference = storage.getReferenceFromUrl("gs://bucket/images/stars.jpg");
-        //String translate_word = word.getText().toString().trim();
-        //String translate_word = "اسد";
-        //gs://hitafdataset.appspot.com/
-        StorageReference storageRef = FirebaseStorage.getInstance().getReference();
-        //final StorageReference videoRef = storageRef.child("https://firebasestorage.googleapis.com/v0/b/hitafdataset.appspot.com/o/"+translate_word+".mp4?alt=media&token=651539d0-597d-4d26-b0c3-1bf8bbcc9c10\n");
-        final StorageReference videoRef = storageRef.child("gs://hitafdataset.appspot.com/تمساح.mp4");
-        //final StorageReference videoRef = storageRef.child("gs://bucket/video/تمساح.mp4");
-        final long ONE_MEGABYTE = 1024 * 1024;
-        videoRef.getBytes(ONE_MEGABYTE).addOnSuccessListener(new OnSuccessListener<byte[]>() {
+
+        FirebaseStorage storage = FirebaseStorage.getInstance();
+        final StorageReference gsReference = storage.getReferenceFromUrl("gs://hitafdataset.appspot.com/تمساح.mp4");
+        gsReference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
             @Override
-            public void onSuccess(byte[] bytes) {
+            public void onSuccess(Uri uri) {
+                MediaController mc = new MediaController(type.this);
                 VideoView Avatar = findViewById(R.id.video_view_type);
-                Uri uri = Uri.parse(String.valueOf(videoRef));
+
+                Avatar.setMediaController(mc);
                 Avatar.setVideoURI(uri);
                 Avatar.requestFocus();
                 Avatar.start();
+
             }
+
         }).addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception exception) {
                 // Handle any errors
             }
         });
+
     }
 }

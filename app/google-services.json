@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "532493124590-aibqac33v0du5bidn5v6rdqm56f7g0on.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hitaf_project",
+            "certificate_hash": "b4c4f135d910b881d2af9e4a6952e545dc32eb89"
+          }
+        },
+        {
           "client_id": "532493124590-hsq3937vgvttd7s6435dj5d9neihrb9q.apps.googleusercontent.com",
           "client_type": 3
         }
