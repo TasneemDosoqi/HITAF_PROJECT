@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="690dp"
+        android:layout_height="380dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="66dp"
+        android:background="@drawable/dilog_about_us"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="579dp"
+            android:layout_height="123dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="55dp"
+            android:fontFamily="@font/ffhekaya_light"
+            android:text="لمزيد من المعلومات عن تطبيق هتاف يرجى التواصل معنا عبر البريد الإلكتروني"
+            android:textAlignment="center"
+            android:textColor="#D16C00"
+            android:textSize="40dp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="641dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="11dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="55dp"
+            android:fontFamily="@font/ffhekaya_light"
+            android:text="hitafapp@gmail.com"
+            android:textAlignment="center"
+            android:textColor="#D16C00"
+            android:textSize="40dp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
