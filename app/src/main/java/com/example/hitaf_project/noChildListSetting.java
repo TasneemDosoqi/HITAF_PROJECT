@@ -5,11 +5,11 @@ import android.app.Dialog;
 import android.os.Bundle;
 
 
-public class noChildList extends Dialog {
+public class noChildListSetting extends Dialog {
 
     public Activity c;
 
-    public noChildList(Activity a) {
+    public noChildListSetting(Activity a) {
         super(a);
         this.c = a;
     }
@@ -18,7 +18,7 @@ public class noChildList extends Dialog {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.no_child_dialog);
+        setContentView(R.layout.no_child_dialog_setting);
     }
 
 

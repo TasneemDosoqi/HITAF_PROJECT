@@ -1,9 +1,271 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_dark_green"
     tools:context=".AddChild">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/rectangle_91"
+        android:layout_alignParentLeft="true">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="1159dp"
+            android:layout_height="180dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="121dp">
+
+
+            <RelativeLayout
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="230dp"
+                android:layout_marginTop="10dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imageUpdated"
+                    android:layout_width="162dp"
+                    android:layout_height="129dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="111dp"
+                    android:src="@drawable/green_user_pic"
+                    app:civ_border_color="#0B917C"
+                    app:civ_border_width="3dp" />
+
+                <Button
+                    android:id="@+id/add_ChildPic"
+                    android:layout_width="61dp"
+                    android:layout_height="57dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="13dp"
+                    android:layout_marginBottom="99dp"
+                    android:background="@drawable/add_pic_yellow"
+                    android:onClick="onImageClicked" />
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="200dp"
+                android:layout_height="66dp"
+                android:layout_marginLeft="90dp"
+                android:fontFamily="@font/ffhekaya_light"
+                android:text="صورة الطفل: "
+                android:textColor="#FFFFFF"
+                android:textSize="40sp" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/table"
+            android:layout_width="937dp"
+            android:layout_height="240dp"
+            android:layout_below="@+id/linearLayout1"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="16dp">
+
+            <LinearLayout
+                android:id="@+id/lin1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+
+                <EditText
+                    android:id="@+id/child_name"
+                    android:layout_width="323dp"
+                    android:layout_height="45dp"
+                    android:layout_marginRight="190dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:inputType="text"
+                    android:padding="12dp"
+                    android:textAlignment="center"
+                    android:textColor="#138169" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="66dp"
+                    android:layout_marginRight="95dp"
+                    android:fontFamily="@font/ffhekaya_light"
+                    android:text="الإسم: "
+                    android:textColor="#FFFFFF"
+                    android:textSize="40sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lin1"
+                android:layout_marginTop="1dp"
+                android:gravity="right">
+
+                <EditText
+                    android:id="@+id/child_age"
+                    android:layout_width="323dp"
+                    android:layout_height="45dp"
+                    android:layout_marginRight="200dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:inputType="number"
+                    android:padding="12dp"
+                    android:textAlignment="center"
+                    android:textColor="#138169" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="66dp"
+                    android:layout_marginRight="95dp"
+                    android:fontFamily="@font/ffhekaya_light"
+                    android:text="العمر: "
+                    android:textColor="#FFFFFF"
+                    android:textSize="40sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/idgender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lin2"
+                android:gravity="right">
+
+                <RadioGroup
+                    android:id="@+id/radioSex"
+                    android:layout_width="367dp"
+                    android:layout_height="66dp"
+                    android:layout_marginRight="190dp"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioMale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_gravity="start"
+                        android:layout_marginRight="90dp"
+                        android:buttonTint="#0B917C"
+                        android:checked="true"
+                        android:clickable="true"
+                        android:layoutDirection="rtl"
+                        android:minWidth="90dp"
+                        android:onClick="onRadioButtongenderClicked"
+                        android:text="ذكر"
+                        android:textAlignment="textStart"
+                        android:textColor="#FFFFFF"
+                        android:textSize="40sp" />
+
+                    <RadioButton
+                        android:id="@+id/radioFemale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_gravity="start"
+                        android:buttonTint="#0B917C"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:layoutDirection="rtl"
+                        android:minWidth="90dp"
+                        android:onClick="onRadioButtongenderClicked"
+                        android:text="أنثى"
+                        android:textAlignment="textStart"
+                        android:textColor="#FFFFFF"
+                        android:textSize="40sp" />
+
+
+                </RadioGroup>
+
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="66dp"
+                    android:layout_marginRight="95dp"
+                    android:fontFamily="@font/ffhekaya_light"
+                    android:text="الجنس: "
+                    android:textColor="#FFFFFF"
+                    android:textSize="40sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin33"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/idgender">
+
+
+                <TextView
+                    android:id="@+id/error"
+                    android:layout_width="849dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="95dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/ffhekaya_light"
+                    android:text="خطأ"
+                    android:textColor="#F85171"
+                    android:textSize="30sp" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lin3"
+            android:layout_width="959dp"
+            android:layout_height="131dp"
+            android:layout_below="@+id/table"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="0dp">
+
+
+            <Button
+                android:id="@+id/cancle_button"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="250dp"
+                android:layout_marginRight="70dp"
+                android:background="@drawable/cancle_red_button"
+                android:onClick="cancelButton1"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="175dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginRight="0dp"
+                android:background="@drawable/save_yellow_button"
+                android:onClick="onSaveClicked" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -8,12 +8,17 @@
         android:layout_width="597dp"
         android:layout_height="303dp"
         android:background="@drawable/resetpass_success">
+
+
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="تم تغيير كلمة المرور بنجاح"
+            android:layout_width="533dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="160dp"
+            android:layout_marginStart="-10dp"
             android:fontFamily="@font/ffhekaya_light"
-            android:textColor="#4B5D01"/>
+            android:text="تم تغيير كلمة المرور بنجاح"
+            android:textColor="#4B5D01"
+            android:textSize="60dp" />
 
 
 

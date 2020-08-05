@@ -4,6 +4,7 @@ public class YoutubeVideos {
 
     String videoUrl;
 
+    // Class to retrieve videos from YouTube, includes constructors and getter
     public YoutubeVideos() {
     }
 
@@ -13,9 +14,5 @@ public class YoutubeVideos {
 
     public String getVideoUrl() {
         return videoUrl;
-    }
-
-    public void setVideoUrl(String videoUrl) {
-        this.videoUrl = videoUrl;
     }
 }

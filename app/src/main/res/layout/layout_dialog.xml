@@ -32,7 +32,7 @@
 
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/resetPass_email"
             android:layout_width="276dp"
             android:layout_height="40dp"
             android:layout_marginStart="-500dp"

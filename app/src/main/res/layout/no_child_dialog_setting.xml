@@ -6,8 +6,8 @@
 
 
     <LinearLayout
-        android:layout_width="690dp"
-        android:layout_height="380dp"
+        android:layout_width="730dp"
+        android:layout_height="200dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerVertical="true"
@@ -19,15 +19,16 @@
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="579dp"
-            android:layout_height="175dp"
+            android:layout_width="604dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="11dp"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="15dp"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="5dp"
-            android:layout_marginRight="55dp"
+            android:layout_marginRight="15dp"
             android:fontFamily="@font/ffhekaya_light"
-            android:text="عذراً ، لا يوجد لديك أطفال مسجلين حالياً . لإضافة طفل الرجاء التوجه إلى صفحة الإعدادات بالضغط على الزر الموجود آعلاه"
+            android:text="عذراً ، لا يوجد لديك أطفال مسجلين حالياً .
+             لإضافة طفل الرجاء الضغط على زر إضافة طفل"
             android:textAlignment="center"
             android:textColor="#D16C00"
             android:textSize="40dp" />

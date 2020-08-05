@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/HITAF_PROJECT.iml" filepath="$PROJECT_DIR$/HITAF_PROJECT.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HITAF_PROJECT.iml" filepath="$PROJECT_DIR$/HITAF_PROJECT.iml" group="HITAF_PROJECT" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="HITAF_PROJECT/app" />
     </modules>
   </component>
 </project>

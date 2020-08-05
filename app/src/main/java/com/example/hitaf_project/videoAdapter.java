@@ -13,6 +13,7 @@ public class videoAdapter extends RecyclerView.Adapter<videoAdapter.VideoViewHol
 
     List<YoutubeVideos> youtubeVideoList;
 
+    //CLASS TO BIND EVERY ELEMENTS IN THE ARRAYLIST TO EVERY ITEM IN RECYCLER VIEW
     public videoAdapter() {
     }
 
@@ -24,7 +25,6 @@ public class videoAdapter extends RecyclerView.Adapter<videoAdapter.VideoViewHol
     public VideoViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
         View view = LayoutInflater.from( parent.getContext()).inflate(R.layout.video_view, parent, false);
-
         return new VideoViewHolder(view);
 
     }
@@ -49,7 +49,6 @@ public class videoAdapter extends RecyclerView.Adapter<videoAdapter.VideoViewHol
             super(itemView);
 
             videoWeb = (WebView) itemView.findViewById(R.id.videoWebView);
-
             videoWeb.getSettings().setJavaScriptEnabled(true);
             videoWeb.setWebChromeClient(new WebChromeClient() {
 

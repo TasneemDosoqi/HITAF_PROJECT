@@ -6,12 +6,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_yellow"
-    tools:context=".type">
+    tools:context=".Saying">
 
     <LinearLayout
         android:id="@+id/linearLayout1"
         android:layout_width="match_parent"
-        android:layout_height="139dp"
+        android:layout_height="110dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
@@ -20,28 +20,32 @@
 
         <Button
             android:id="@+id/setting_type"
-            android:layout_width="113.69dp"
-            android:layout_height="113.69dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_marginLeft="70dp"
-            android:background="@drawable/green_setting" />
+            android:background="@drawable/green_setting"
+            android:onClick="settingPage"
+            android:visibility="invisible"
+            tools:visibility="invisible" />
 
         <TextView
             android:id="@+id/textView1"
             android:layout_width="wrap_content"
             android:layout_height="150dp"
-            android:layout_marginLeft="187dp"
+            android:layout_marginLeft="160dp"
             android:layout_marginTop="0dp"
             android:fontFamily="@font/ffhekaya_light"
             android:text="ماذا تقول يا صديقي؟ "
             android:textColor="#FFFFFF"
-            android:textSize="100sp" />
+            android:textSize="70sp" />
 
         <Button
             android:id="@+id/back_home"
-            android:layout_width="59.12dp"
-            android:layout_height="103.69dp"
-            android:layout_marginLeft="180dp"
-            android:background="@drawable/back_blue" />
+            android:layout_width="42dp"
+            android:layout_height="66dp"
+            android:layout_marginLeft="150dp"
+            android:background="@drawable/back_blue"
+            android:onClick="BackButton" />
 
     </LinearLayout>
 
@@ -55,63 +59,87 @@
 
         <Button
             android:id="@+id/stop_saying"
-            android:layout_width="300dp"
-            android:layout_height="300dp"
-            android:layout_marginTop="5dp"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="120dp"
             android:layout_marginBottom="5dp"
             android:layout_weight="1"
             android:background="@drawable/stop"
             app:layout_constraintBottom_toTopOf="@+id/text_area"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.656"
+            app:layout_constraintHorizontal_bias="0.38"
             app:layout_constraintStart_toEndOf="@+id/avatar_sqaure"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.604" />
+            app:layout_constraintVertical_bias="0.602" />
+
 
         <Button
             android:id="@+id/start_saying"
-            android:layout_width="300dp"
-            android:layout_height="300dp"
-            android:layout_marginTop="5dp"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="120dp"
             android:layout_marginBottom="5dp"
             android:layout_weight="1"
             android:background="@drawable/speak"
             app:layout_constraintBottom_toTopOf="@+id/text_area"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.656"
+            app:layout_constraintHorizontal_bias="0.38"
             app:layout_constraintStart_toEndOf="@+id/avatar_sqaure"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.604" />
+            app:layout_constraintVertical_bias="0.602" />
 
-        <ImageView
+        <LinearLayout
             android:id="@+id/avatar_sqaure"
-            android:layout_width="500dp"
-            android:layout_height="500dp"
-            android:layout_marginStart="60dp"
-            android:layout_marginLeft="60dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="10dp"
-            android:layout_weight="1"
-            android:background="@drawable/rectangle_avatar"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="380dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/rectangle66"
+            android:orientation="vertical"
+            android:padding="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/TalkText"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.317" />
+            app:layout_constraintTop_toTopOf="parent">
+
+            <VideoView
+                android:id="@+id/video_view_type"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center" />
+
+
+        </LinearLayout>
 
         <ImageView
             android:id="@+id/text_area"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="756dp"
-            android:layout_marginLeft="756dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="40dp"
+            android:layout_marginStart="450dp"
+            android:layout_marginEnd="66dp"
+            android:layout_marginBottom="70dp"
             android:layout_weight="1"
             android:background="@drawable/rectangle_saying_text"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/avatar_sqaure"
             app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/TalkText"
+            android:layout_width="0dp"
+            android:layout_height="67dp"
+            android:layout_marginEnd="103dp"
+            android:fontFamily="@font/ffhekaya_light"
+            android:text="ماذا تقول يا صديقي؟ "
+            android:textColor="#FEB92A"
+            android:textSize="50sp"
+            app:layout_constraintBottom_toBottomOf="@+id/text_area"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/avatar_sqaure"
+            app:layout_constraintTop_toTopOf="@+id/text_area"
+            app:layout_constraintVertical_bias="0.444" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

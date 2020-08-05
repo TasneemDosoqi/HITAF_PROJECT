@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -8,42 +7,46 @@
     android:background="@drawable/background_blue"
     android:orientation="vertical"
     tools:context=".type">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="255dp"
-        android:layout_height="140dp"
-        android:layout_marginStart="750dp"
-        android:layout_marginTop="20dp"
-        app:srcCompat="@drawable/logo" />
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="190dp"
+            android:layout_height="117dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="60dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo" />
 
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="564dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="20dp"
-        android:fontFamily="@font/ffhekaya_light"
-        android:gravity="center|clip_vertical|center_horizontal|center_vertical|fill_vertical"
-        android:text="فريق هتاف يتمنى لكم وقتاً  ممتعاً"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="40sp" />
-
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="564dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="56dp"
+            android:layout_marginEnd="48dp"
+            android:fontFamily="@font/ffhekaya_light"
+            android:gravity="center|clip_vertical|center_horizontal|center_vertical|fill_vertical"
+            android:text="فريق هتاف يتمنى لكم وقتاً  ممتعاً"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp"
+            app:layout_constraintEnd_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
     <FrameLayout
         android:id="@+id/vedio_linLayout1"
-        android:layout_width="300dp"
-        android:layout_height="479dp"
+        android:layout_width="250dp"
+        android:layout_height="425dp"
         android:layout_gravity="center"
         android:padding="8dp">
-
         <VideoView
             android:id="@+id/video_view1"
-            android:layout_width="312dp"
-            android:layout_height="481dp" />
-
+            android:layout_width="245dp"
+            android:layout_height="426dp" />
     </FrameLayout>
-
 
 </LinearLayout>

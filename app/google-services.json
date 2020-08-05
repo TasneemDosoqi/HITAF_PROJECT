@@ -15,6 +15,22 @@
       },
       "oauth_client": [
         {
+          "client_id": "323385004943-tpduas9vp3jbjq5akf374nakhrlg2hv7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hitaf_project",
+            "certificate_hash": "d123e9d37a03270893ef1e105b9f8a92c9c08b38"
+          }
+        },
+        {
+          "client_id": "323385004943-8fd56v7v5irik2p0849bv72sf2jftrb8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hitaf_project",
+            "certificate_hash": "491213789bf725b6c85a3438d3d1bc005832a05d"
+          }
+        },
+        {
           "client_id": "323385004943-jgdse9e39657r53m8imsupi49hlg0jhd.apps.googleusercontent.com",
           "client_type": 3
         }

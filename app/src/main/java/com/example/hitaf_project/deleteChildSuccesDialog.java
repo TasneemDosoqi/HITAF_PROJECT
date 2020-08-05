@@ -5,12 +5,12 @@ import android.app.Dialog;
 import android.os.Bundle;
 
 
-public class RegisterSuccesDialog extends Dialog {
+public class deleteChildSuccesDialog extends Dialog {
 
     public Activity c;
 
-    //Class to show dialog if Register new user done successfully
-    public RegisterSuccesDialog(Activity a) {
+    //Class to show dialog if delete child account done successfully
+    public deleteChildSuccesDialog(Activity a) {
         super(a);
         this.c = a;
     }

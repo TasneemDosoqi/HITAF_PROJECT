@@ -19,10 +19,9 @@ public class SpalshPage extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-        // WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.splash_page);
 
+        //For waiting seven second before going to sign in screen
         final VideoView introVideo = findViewById(R.id.video_view1);
         String videoPath = "android.resource://" + getPackageName() + "/" + R.raw.splashvideo;
         Uri uri = Uri.parse(videoPath);
@@ -37,7 +36,7 @@ public class SpalshPage extends AppCompatActivity {
             @Override
             public void run() {
                 Intent i=new Intent(SpalshPage.this,
-                        SignUp.class);
+                        SignIn.class);
 
                 startActivity(i);
 

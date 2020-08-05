@@ -25,11 +25,13 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     ArrayList<Child> children = new ArrayList<>();
     String retrivedImage;
 
+    //Constructor
     public RecyclerViewAdapter(Context context2, ArrayList<Child> child) {
         this.context = context2;
         this.children = child;
     }
 
+    //Function to inflate the recycler view with customer layout
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int i) {
@@ -37,13 +39,14 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         return new ViewHolder(view);
     }
 
+    //Function to link every child and it's element in recycler view
     @Override
     public void onBindViewHolder(final ViewHolder holder, int position) {
 
         final Child ch = children.get(position);
         retrivedImage = ch.getChildImage();
 
-        ////new changes
+        //Bind every child image to every item in recycler view
         FirebaseStorage storage = FirebaseStorage.getInstance();
         final StorageReference gsReference = storage.getReferenceFromUrl("gs://hitaf-application-project.appspot.com/Images/"+retrivedImage);
         gsReference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
@@ -77,7 +80,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         holder.name.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(context.getApplicationContext(), SignUp.class);
+                Intent i = new Intent(context.getApplicationContext(), Home.class);
                 i.putExtra("childName",ch.getChildName());
                 context.startActivity(i);
             }
@@ -85,11 +88,13 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     }
 
+    //Function override for RecyclerView extended
     @Override
     public int getItemCount() {
         return children.size();
     }
 
+    //Class to hold the child elements
     public class ViewHolder extends RecyclerView.ViewHolder{
 
         CircleImageView image;

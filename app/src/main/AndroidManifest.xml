@@ -2,22 +2,43 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.hitaf_project">
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
     <application
         android:allowBackup="true"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".EmailDialog"></activity>
+        <activity android:name=".addChildSuccesDialog"></activity>
+        <activity android:name=".RegisterSuccesDialog"></activity>
+        <activity android:name=".aboutUsDialog"></activity>
+        <activity android:name=".noChildList"></activity>
+        <activity android:name=".noChildListSetting"></activity>
+        <activity android:name=".areYouSureToDeleDialog" />
+        <activity android:name=".deleteChildSuccesDialog" />
         <activity android:name=".type" />
-        <activity android:name=".Home">
+        <activity android:name=".childId" />
+        <activity android:name=".videoPlay" />
+        <activity android:name=".SignIn" />
+        <activity android:name=".Home" />
+        <activity android:name=".Password2_dialog" />
+        <activity android:name=".setting" />
+        <activity android:name=".Home1" />
+        <activity android:name=".videoList" />
+        <activity android:name=".Resetpassword" />
+        <activity android:name=".AddChild" />
+        <activity android:name=".addVideo" />
+        <activity android:name=".keyDialog"/>
+        <activity android:name=".Saying"/>
+        <activity android:name=".SpalshPage" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
         <activity android:name=".SignUp" />
-        <activity android:name=".SignIn" />
     </application>
 
 </manifest>

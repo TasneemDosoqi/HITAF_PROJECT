@@ -21,10 +21,10 @@
                 android:layout_width="250dp"
                 android:layout_height="240dp"
                 android:layout_centerHorizontal="true"
-                android:src="@drawable/blue_user_pic"
-                app:civ_border_color="#FFF5C618"
-                app:civ_border_width="6dp"
-                android:layout_marginTop="5dp"/>
+                android:layout_marginTop="5dp"
+                android:src="@drawable/child_pic_defulte"
+                app:civ_border_color="#F8CF1D"
+                app:civ_border_width="6dp" />
 
             <TextView
                 android:id="@+id/name"
@@ -36,7 +36,7 @@
                 android:fontFamily="@font/ffhekaya_light"
                 android:gravity="center"
                 android:text="اسم الطفل"
-                android:textColor="#FFFFFF"
+                android:textColor="#F8CF1D"
                 android:textSize="40sp" />
 
 
